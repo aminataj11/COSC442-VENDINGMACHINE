@@ -78,7 +78,7 @@ public class VendingMachine {
 	 */
 	private int getSlotIndex(String code) throws VendingMachineException {
 		if (code.equals(A_CODE)) {
-			return 1; // INJECTED FAULT
+			return 0; // INJECTED FAULT
 		} else if (code.equals(B_CODE)) {
 			return 1;
 		} else if (code.equals(C_CODE)) {
